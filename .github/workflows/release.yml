@@ -89,8 +89,16 @@ jobs:
           APPMETRICA_API_KEY: ${{ secrets.APPMETRICA_API_KEY }}
         run: ./gradlew --no-daemon :app:assembleDirectRelease :app:lintDirectRelease
 
+      # Same env as the build above: VAZIE_KEYSTORE_PATH is job-wide via GITHUB_ENV, so without
+      # the passwords verifyReleaseSigning refuses, and without the AppMetrica key the scan would
+      # recompile a different artifact from the one being shipped.
       - name: Scan the release artifact
-        run: ./gradlew --no-daemon :app:checkReleaseGraph :app:checkReleaseArtifact
+        env:
+          VAZIE_KEYSTORE_PASSWORD: ${{ secrets.VAZIE_KEYSTORE_PASSWORD }}
+          VAZIE_KEY_ALIAS: ${{ secrets.VAZIE_KEY_ALIAS }}
+          VAZIE_KEY_PASSWORD: ${{ secrets.VAZIE_KEY_PASSWORD }}
+          APPMETRICA_API_KEY: ${{ secrets.APPMETRICA_API_KEY }}
+        run:./gradlew --no-daemon :app:checkReleaseGraph :app:checkReleaseArtifact
 
       - name: Build the Play bundle
         env:
