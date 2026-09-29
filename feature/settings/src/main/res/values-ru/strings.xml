@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Настройки</string>
+    <string name="settings_back">Назад</string>
+
+    <string name="guide_quick_settings_title">Подключение из шторки</string>
+    <string name="guide_quick_settings_body">У Vazie VPN есть плитка быстрых настроек: одно нажатие поднимает или закрывает туннель, не открывая приложение.</string>
+    <string name="guide_quick_settings_action">Добавить плитку</string>
+    <string name="guide_quick_settings_manual">Как добавить вручную</string>
+    <string name="guide_quick_settings_step_1">Раскройте шторку быстрых настроек до конца.</string>
+    <string name="guide_quick_settings_step_2">Нажмите «Изменить» — обычно это карандаш.</string>
+    <string name="guide_quick_settings_step_3">Найдите Vazie VPN среди неиспользуемых плиток.</string>
+    <string name="guide_quick_settings_step_4">Перетащите её к активным.</string>
+    <string name="guide_shortcuts_title">Конфигурации под иконкой</string>
+    <string name="guide_shortcuts_body">Долгое нажатие на иконку Vazie VPN сразу предлагает сохранённые конфигурации. Настраивать нечего — они уже там.</string>
+    <string name="guide_shortcuts_manual">Как этим пользоваться</string>
+    <string name="guide_shortcuts_step_1">Задержите палец на иконке Vazie VPN.</string>
+    <string name="guide_shortcuts_step_2">Отпустите на нужной конфигурации.</string>
+    <string name="guide_widgets_title">Vazie VPN на рабочем столе</string>
+    <string name="guide_widgets_body">Два виджета: «Быстрое подключение», это просто кнопка, и «Панель» с показаниями сессии. Кнопка ниже просит лаунчер о «Быстром подключении» — «Панель» добавьте из списка виджетов.</string>
+    <string name="guide_widgets_action">Добавить «Быстрое подключение»</string>
+    <string name="guide_widgets_manual">Как добавить вручную</string>
+    <string name="guide_widgets_step_1">Задержите палец на пустом месте рабочего стола.</string>
+    <string name="guide_widgets_step_2">Откройте список виджетов.</string>
+    <string name="guide_widgets_step_3">Найдите Vazie VPN. Их два.</string>
+    <string name="guide_widgets_step_4">Выберите размер и вытащите на стол.</string>
+    <string name="guide_widgets_step_5">Панель — в том же списке; её вытащите так же.</string>
+
+    <string name="settings_look_and_feel">Внешний вид</string>
+    <string name="settings_appearance">Оформление</string>
+    <string name="settings_appearance_title">Оформление</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_app_icon">Иконка приложения</string>
+    <string name="settings_app_icon_body">Меняет иконку на рабочем столе. Конфигурации и текущее подключение это не трогает; некоторые лаунчеры замечают смену не сразу.</string>
+    <string name="settings_app_icon_orbit">Orbit</string>
+    <string name="settings_app_icon_lime">Lime</string>
+    <string name="settings_app_icon_emerald">Emerald</string>
+    <string name="settings_app_icon_magenta">Magenta</string>
+    <string name="settings_app_icon_cotton_candy">Cotton Candy</string>
+    <string name="settings_app_icon_crimson">Crimson</string>
+    <string name="settings_app_icon_gold">Gold</string>
+    <string name="settings_app_icon_pearl">Pearl</string>
+    <string name="settings_app_icon_onyx">Onyx</string>
+    <string name="settings_app_icon_monochrome">Monochrome</string>
+
+    <string name="settings_app_icon_plate">Фон иконки</string>
+    <string name="settings_app_icon_themed_hint">Если оболочка перекрашивает значки под цвет темы (тематические значки), лучше всего будут смотреться Monochrome или Pearl на фоне Light.</string>
+    <string name="settings_app_icon_plate_deep">Deep</string>
+    <string name="settings_app_icon_plate_light">Light</string>
+    <string name="settings_app_icon_plate_ink">Ink</string>
+    <string name="settings_app_icon_plate_forest">Forest</string>
+    <string name="settings_app_icon_plate_rose">Rose</string>
+    <string name="settings_app_icon_plate_amber">Amber</string>
+    <string name="settings_app_icon_plate_mist">Mist</string>
+
+    <string name="settings_appearance_night_indigo">Night Indigo</string>
+    <string name="settings_appearance_milk">Milk</string>
+
+
+    <string name="settings_vpn_behavior">Поведение VPN</string>
+    <string name="settings_split_tunneling">Раздельное туннелирование</string>
+
+    <string name="settings_help_section">Поддержка</string>
+    <string name="settings_about_section">О Vazie VPN</string>
+    <string name="settings_privacy_row">Подробно о приватности</string>
+    <string name="settings_privacy_row_body">Что Vazie VPN хранит, где и чего никогда не собирает.</string>
+    <string name="settings_about_row">О Vazie VPN</string>
+    <string name="settings_about_row_body">Кто сделал, как связаться, чем помочь.</string>
+
+    <string name="settings_about">Vazie VPN %1$s (%2$d) · %3$s · %4$s · by Vazovsky</string>
+    <string name="settings_about_title">О Vazie VPN</string>
+
+    <string name="settings_made_by">Автор</string>
+    <string name="settings_developer">Vazovsky в Telegram</string>
+    <string name="settings_developer_body">\@vazovsky17 — лично автору</string>
+    <string name="settings_channel">Vazie в Telegram</string>
+    <string name="settings_channel_body">\@vazieapp — новости, релизы и вопросы о приложении</string>
+    <string name="settings_folio">Folio</string>
+    <string name="settings_folio_body">folio.link/vazovsky — другие проекты</string>
+    <string name="settings_source">Исходный код</string>
+    <string name="settings_source_body">github.com/vazovsky17/VazieVPN</string>
+    <string name="settings_project_section">Vazie и поддержка</string>
+    <string name="settings_support_email">Почта поддержки</string>
+    <string name="settings_support_email_body">vazovsky.hub\@gmail.com — оплата, возвраты, VPN Plus</string>
+    <string name="settings_support">Что-то сломалось?</string>
+    <string name="settings_support_body">Напишите в \@vazieapp — прочитает человек. Пожалуйста, не присылайте конфигурацию или ссылку на неё: в них ваши ключи.</string>
+
+    <string name="settings_support_section">Помочь со счетами</string>
+    <string name="settings_boosty_title">Угостить разработчика кофе</string>
+    <string name="settings_boosty_body">Серверы Vazie стоят денег каждый месяц, и платит за них один человек. Помощь совершенно необязательна и ничего не открывает — открывать нечего. Ваши собственные конфигурации бесплатны и такими останутся.</string>
+    <string name="settings_boosty_action">Открыть Boosty</string>
+
+    <string name="settings_made_by_title">Vazie VPN делает Vazovsky</string>
+    <string name="settings_made_by_body">Один человек, вечерами и по выходным. Здесь личные контакты; вопросы о приложении и оплате — в «Vazie и поддержка» ниже.</string>
+
+
+
+
+    <string name="settings_privacy_title">Vazie VPN не подглядывает</string>
+    <string name="settings_privacy_body">Вот что именно Vazie VPN держит у себя, где держит и чего никогда не видит.</string>
+
+    <string name="privacy_stores_title">Что Vazie VPN хранит</string>
+    <string name="privacy_stores_configs">Ваши конфигурации: адрес сервера, порт, настройки транспорта и безопасности и ключи, нужные для подключения.</string>
+    <string name="privacy_stores_choices">Ваши выборы: какая конфигурация выбрана, тема, иконка приложения и какие подсказки вы закрыли.</string>
+    <string name="privacy_stores_usage">Когда каждая конфигурация в последний раз успешно использовалась — отметка времени, и ничего о том, что через неё прошло.</string>
+
+    <string name="privacy_where_title">Где это лежит</string>
+    <string name="privacy_where_encrypted">Конфигурации и их ключи зашифрованы на этом устройстве ключом, который держит хранилище ключей Android. Другие приложения их не прочитают, и никуда они не копируются.</string>
+    <string name="privacy_where_plain">Тема, иконка и закрытые подсказки лежат в обычном файле: это настройки, а не секреты. Они держатся отдельно от зашифрованного хранилища ровно затем, чтобы настройка внешнего вида не могла сломать хранилище с вашими ключами.</string>
+    <string name="privacy_where_backup">Ничего не попадает в облачную резервную копию Android. Восстановленный телефон начинает без конфигураций, а не с ключами, проехавшими через чужое хранилище.</string>
+
+    <string name="privacy_never_title">Чего Vazie VPN никогда не собирает</string>
+    <string name="privacy_never_analytics">Ни аналитики поведения, ни рекламных идентификаторов, ни геолокации. Отчёты о сбоях и оплатах уходят, только если вы их включили — ниже.</string>
+    <string name="privacy_never_account">Аккаунт Vazie не обязателен. Если вы вошли, Vazie VPN знает адрес почты — и ни номера телефона, ни идентификатора устройства.</string>
+    <string name="privacy_never_browsing">Ни истории посещений, ни адресов, ни записей о том, к чему и когда вы подключались, — кроме той отметки времени, что выше.</string>
+
+    <string name="privacy_logs_title">Логи</string>
+    <string name="privacy_logs_body">Vazie VPN пишет в лог Android только в отладочных сборках и никогда не записывает туда ключ, UUID, ссылку или адрес сервера. Релизная сборка молчит.</string>
+
+    <string name="privacy_vpn_title">VPN и ваш DNS</string>
+    <string name="privacy_vpn_body">Пока вы подключены, трафик идёт через сервер из выбранной вами конфигурации. Этот сервер видит адреса, которые запрашивает устройство, — ровно так же, как их иначе видел бы ваш провайдер. Vazie VPN — клиент; между вами и сервером она не стоит.</string>
+    <string name="privacy_vpn_dns">DNS-запросы, пока туннель поднят, идут по нему, то есть тому же серверу, а не провайдеру.</string>
+
+    <string name="privacy_servers_title">Серверы Vazie (VPN Plus)</string>
+    <string name="privacy_servers_body">Серверы VPN Plus держит Vazie. Это машины, как и любые другие: пока сервер несёт ваш трафик, он видит адреса, к которым вы обращаетесь. Это не обещание анонимности, и здесь не заявляется политика логирования, которую нельзя было бы проверить.</string>
+
+    <string name="privacy_own_title">Ваши собственные конфигурации</string>
+    <string name="privacy_own_body">Импортированная вами конфигурация — ваша. Она остаётся на этом устройстве, никуда не выгружается и ничего не стоит — независимо от того, пользуетесь ли вы VPN Plus.</string>
+
+    <string name="privacy_surfaces_title">Виджеты, ярлыки и плитка</string>
+    <string name="privacy_surfaces_widgets">Виджет на рабочем столе показывает имя выбранной конфигурации, её протокол, длительность сессии и трафик. Всё это лежит в собственных настройках виджета, чтобы он мог рисоваться при закрытой Vazie VPN, — на этом устройстве и никогда не ключ и не адрес.</string>
+    <string name="privacy_surfaces_shortcuts">Долгое нажатие на иконку предлагает до трёх конфигураций по именам. Имя, похожее на адрес, ссылку, почту, IP или UUID, не сокращается, а пропускается: подпись ярлыка видна без разблокировки.</string>
+    <string name="privacy_surfaces_tile">Плитка быстрых настроек показывает состояние подключения и больше ничего. Конфигурацию она не называет.</string>
+
+
+    <string name="privacy_export_title">Экспорт конфигурации</string>
+    <string name="privacy_export_body">Экспорт даёт исходную ссылку, а в ней лежат учётные данные для подключения к серверу. Любой, кто её получит, сможет пользоваться сервером как вы. Vazie VPN передаёт её системному меню «Поделиться» в тот момент, когда вы попросили, и копии не хранит.</string>
+    <string name="settings_privacy_never">Этого Vazie VPN не видит никогда</string>
+    <string name="settings_privacy_always">Про Vazie VPN это верно</string>
+
+    <string name="settings_guides_row">Руководства</string>
+    <string name="settings_guides_row_body">Виджеты, плитка, ярлыки и уведомление о подключении.</string>
+    <string name="settings_guides_title">Руководства</string>
+    <string name="settings_guides_body">С чего начать — и что за части Vazie VPN живут за пределами приложения.</string>
+    <string name="settings_guides_viewed">Просмотрено</string>
+    <string name="guide_notification_title">Туннель на виду</string>
+    <string name="guide_notification_body_off">Пока туннель поднят, Vazie VPN может висеть в строке состояния с кнопкой «Отключить» — чтобы остановить его, не открывая приложение. Сейчас уведомления выключены, и она не может.</string>
+    <string name="guide_notification_body_on">Пока туннель поднят, Vazie VPN висит в строке состояния с кнопкой «Отключить» — можно остановить его, не открывая приложение.</string>
+    <string name="guide_notification_action">Открыть настройки уведомлений</string>
+    <string name="guide_notification_manual">Как это изменить</string>
+    <string name="guide_notification_step_1">Откройте настройки телефона, затем «Приложения».</string>
+    <string name="guide_notification_step_2">Найдите Vazie VPN и откройте уведомления приложения.</string>
+    <string name="guide_notification_step_3">Включите уведомление о VPN-подключении.</string>
+    <string name="settings_guides_replay_tour">Пройти экскурсию снова</string>
+    <string name="settings_guides_replay_tour_body">Короткая прогулка по главному экрану.</string>
+    <string name="getting_started_section">С чего начать</string>
+    <string name="getting_started_first_config_title">Добавить первую конфигурацию</string>
+    <string name="getting_started_first_config_summary">Что такое конфигурация и где её взять.</string>
+    <string name="getting_started_first_config_intro">Чтобы пользоваться своим VPN, Vazie VPN нужна конфигурация — ссылка с настройками сервера. Обычно её даёт провайдер VPN, тот, кто держит сервер, или вы получаете её на своём собственном.</string>
+    <string name="getting_started_shape_heading">Как она выглядит</string>
+    <string name="getting_started_shape_body">Длинная строка из непонятных символов — это нормально. Вставьте её в Vazie VPN — приложение само разберёт, что внутри.</string>
+    <string name="getting_started_example_a11y">Пример ссылки с конфигурацией</string>
+    <string name="getting_started_reads_heading">Что Vazie VPN читает сейчас</string>
+    <string name="getting_started_reads_body">%1$s. Если Vazie VPN не узнает ссылку, то скажет об этом и не станет ничего угадывать.</string>
+    <string name="getting_started_add_action">Добавить конфигурацию</string>
+    <string name="settings_guides_system_section">Интеграция с системой</string>
+    <string name="guide_quick_settings_summary">Поднять или закрыть туннель, не открывая Vazie VPN.</string>
+    <string name="guide_shortcuts_summary">Задержать палец на иконке и выбрать — настраивать нечего.</string>
+    <string name="guide_widgets_summary">«Быстрое подключение» и «Панель» на рабочем столе.</string>
+    <string name="guide_notification_summary">Туннель в строке состояния, с кнопкой «Отключить».</string>
+    <string name="getting_started_first_config_short">Первая конфигурация</string>
+    <string name="getting_started_manage_title">Управление конфигурациями</string>
+    <string name="getting_started_manage_short">Управление</string>
+    <string name="getting_started_manage_summary">Выбрать, переименовать, удалить.</string>
+    <string name="getting_started_manage_intro">Когда конфигурация есть, всё, что с ней можно сделать, лежит в двух местах: в списке и на её собственном экране.</string>
+    <string name="getting_started_manage_list_heading">В списке</string>
+    <string name="getting_started_manage_list_body">Нажмите на конфигурацию, чтобы ею пользоваться. Проведите по ней, чтобы удалить; об удалении Vazie всегда спросит.</string>
+    <string name="getting_started_manage_details_heading">В деталях</string>
+    <string name="getting_started_manage_details_body">Откройте конфигурацию, чтобы переименовать, дублировать или экспортировать её. Дублирование создаёт вторую копию на этом устройстве; удаление убирает её только с этого устройства.</string>
+    <string name="getting_started_manage_export_heading">Про экспорт</string>
+    <string name="getting_started_manage_export_body">Экспорт создаёт конфигурацию, которой можно поделиться. В ней могут быть ключи для подключения, поэтому относитесь к ней как к паролю.</string>
+
+    <!-- Questions and answers: the same as on vazie.app. -->
+    <string name="settings_faq_row">Вопросы и ответы</string>
+    <string name="settings_faq_row_body">VPN Plus, оплата и возврат</string>
+    <string name="faq_title">Вопросы и ответы</string>
+    <string name="faq_what_q">Что такое VPN Plus?</string>
+    <string name="faq_what_a">Доступ к VPN-серверам Vazie на 1 месяц за 299 ₽ или на 1 год за 2 990 ₽: в приложении Vazie VPN на Android или в Happ и Shadowrocket на iPhone.</string>
+    <string name="faq_where_q">Где можно оплатить?</string>
+    <string name="faq_where_a">В приложении Vazie VPN или на сайте vazie.app: выберите срок и войдите в аккаунт — дальше будет сказано, как оплатить.</string>
+    <string name="faq_renew_q">Будут ли автоматические списания?</string>
+    <string name="faq_renew_a">Нет. VPN Plus оплачивается разово на выбранный срок. Когда он закончится, доступ просто прекратится — продлить можно новой оплатой.</string>
+    <string name="faq_end_q">Что будет, когда оплаченный срок закончится?</string>
+    <string name="faq_end_a">Доступ VPN Plus прекратится. Деньги автоматически не списываются: чтобы продолжить, нужно оплатить новый период.</string>
+    <string name="faq_start_q">Когда начнётся оплаченный период?</string>
+    <string name="faq_start_a">С момента, когда оплата подтверждена, — доступ активируется для вашего аккаунта Vazie на 1 месяц или на 1 год. Если оплатить новый период, пока текущий ещё действует, он начнётся после окончания текущего.</string>
+    <string name="faq_refund_q">Как вернуть деньги?</string>
+    <string name="faq_refund_a">Напишите на vazovsky.hub@gmail.com. Порядок описан на странице «Возврат и отказ от покупки».</string>
+    <string name="faq_refund_link">Возврат и отказ от покупки</string>
+    <string name="faq_contact_q">Как с нами связаться?</string>
+    <string name="faq_contact_a">Пишите на vazovsky.hub@gmail.com — по работе приложений, оплате и возвратам.</string>
+    <string name="privacy_diagnostics_title">Отчёты о сбоях и оплатах</string>
+    <string name="privacy_diagnostics_switch">Отправлять отчёты</string>
+    <string name="privacy_diagnostics_body">Если включить, Vazie VPN отправляет в Яндекс AppMetrica отчёты о сбоях приложения и о том, чем закончилась оплата VPN Plus: тариф и причина. Без конфигураций, ключей, адресов серверов, почты и истории подключений. Выключено, пока вы сами не включите.</string>
+
+    <!-- Split tunnelling: which apps use the VPN. -->
+    <string name="split_tunnel_title">Раздельное туннелирование</string>
+    <string name="split_tunnel_mode_off">Все приложения через VPN</string>
+    <string name="split_tunnel_mode_off_body">Туннелем пользуются все приложения на телефоне.</string>
+    <string name="split_tunnel_mode_exclude">Все, кроме выбранных</string>
+    <string name="split_tunnel_mode_exclude_body">Выбранные приложения идут напрямую через провайдера, остальные — через VPN.</string>
+    <string name="split_tunnel_mode_include">Только выбранные</string>
+    <string name="split_tunnel_mode_include_body">Через VPN идут только выбранные приложения, остальные — напрямую через провайдера.</string>
+    <string name="split_tunnel_note">Изменения применятся при следующем подключении. В списке — приложения со значком на рабочем столе.</string>
+    <string name="split_tunnel_search">Найти приложение</string>
+    <string name="split_tunnel_loading">Загружаю приложения…</string>
+    <string name="split_tunnel_nothing_found">Ничего не нашлось.</string>
+    <string name="split_tunnel_status_off">Все приложения через VPN</string>
+    <plurals name="split_tunnel_selected">
+        <item quantity="one">Выбрано %d приложение</item>
+        <item quantity="few">Выбрано %d приложения</item>
+        <item quantity="many">Выбрано %d приложений</item>
+        <item quantity="other">Выбрано %d приложения</item>
+    </plurals>
+    <plurals name="split_tunnel_status_exclude">
+        <item quantity="one">%d приложение мимо VPN</item>
+        <item quantity="few">%d приложения мимо VPN</item>
+        <item quantity="many">%d приложений мимо VPN</item>
+        <item quantity="other">%d приложения мимо VPN</item>
+    </plurals>
+    <plurals name="split_tunnel_status_include">
+        <item quantity="one">Только %d приложение через VPN</item>
+        <item quantity="few">Только %d приложения через VPN</item>
+        <item quantity="many">Только %d приложений через VPN</item>
+        <item quantity="other">Только %d приложения через VPN</item>
+    </plurals>
+    <string name="settings_report_bug">Сообщить об ошибке</string>
+    <string name="settings_report_bug_body">Короткая форма: что случилось и на каком телефоне.</string>
+</resources>

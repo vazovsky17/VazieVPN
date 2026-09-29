@@ -1,0 +1,64 @@
+# Gradle / Android build output
+.gradle/
+build/
+**/build/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# IDE
+# Output folders a Kotlin language server (e.g. in Zed) writes next to each module
+bin/
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Local machine configuration — SDK paths, per-user tooling
+local.properties
+.claude/
+project-tree.txt
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Signing and credentials. Vazie handles VPN key material, so this section is
+# deliberately broad — nothing here may ever reach the repository.
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+key.properties
+signKeystore/
+google-services.json
+agconnect-services.json
+.env
+.env.*
+*.pem
+# Private keys. `*.key` is intentionally broad: if a source asset ever needs that
+# extension, add a targeted negation next to it rather than relaxing the rule.
+*.key
+
+# The pinned libXray archive is ~96 MB of native code. It is fetched and checksum-verified by
+# :vpn:engine:xray, cached here, and never committed — see third-party/libxray/README.md.
+third-party/libxray/*.zip
+
+# Real VPN configurations must never be committed. Parser test fixtures are
+# synthetic and live under src/test/resources/fixtures.
+*.conf
+!**/src/test/resources/fixtures/**/*.conf
+
+# Stray copies of the direct APKs and baseline profiles that once appeared at app/direct/.
+app/direct/

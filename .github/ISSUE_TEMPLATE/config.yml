@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://t.me/vazovsky17
+    about: Report privately to the developer. Please do not open a public issue for a security problem.
+  - name: Vazie on Telegram
+    url: https://t.me/vazieapp
+    about: News, updates, and questions that do not belong in a public issue.
