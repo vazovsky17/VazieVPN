@@ -1,7 +1,7 @@
 **English** | [Русский](README.ru.md)
 
 <p align="center">
-  <img src="docs/assets/brand/vazie-symbol.png" alt="Vazie" width="96">
+  <img src="docs/assets/brand/vazie-app-icon.png" alt="Vazie VPN app icon" width="96">
 </p>
 
 <h1 align="center">Vazie VPN</h1>
