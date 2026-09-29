@@ -64,9 +64,10 @@ internal object EmailFormat {
         return row[b.length]
     }
 
+    // The first MAX_COMPLETIONS are what is offered right after "@", so the order matters.
     private val KNOWN_DOMAINS = listOf(
-        "gmail.com", "yandex.ru", "mail.ru", "ya.ru", "bk.ru", "inbox.ru", "list.ru", "rambler.ru",
-        "icloud.com", "outlook.com", "hotmail.com", "yahoo.com", "proton.me", "protonmail.com",
+        "gmail.com", "yandex.ru", "mail.ru", "icloud.com", "proton.me", "ya.ru", "bk.ru", "inbox.ru",
+        "list.ru", "rambler.ru", "outlook.com", "hotmail.com", "yahoo.com", "protonmail.com",
     )
 
     /** A practical subset of RFC 5322 and IDN addresses: letters of any script, digits, the usual marks. */
@@ -74,7 +75,7 @@ internal object EmailFormat {
     private val LOCAL =Regex("""[\p{L}\p{N}](?:[\p{L}\p{N}._%+-]{0,62}[\p{L}\p{N}_%+-])?""")
     private val DOMAIN = Regex("""(?:[\p{L}\p{N}](?:[\p{L}\p{N}-]{0,61}[\p{L}\p{N}])?\.)+\p{L}{2,63}""")
 
-    private const val MAX_COMPLETIONS = 3
+    private const val MAX_COMPLETIONS = 5
     private const val MIN_JUDGED_DOMAIN = 4
     private const val MAX_TYPO_DISTANCE = 2
     private const val MAX_LENGTH = 254
