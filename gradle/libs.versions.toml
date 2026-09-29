@@ -31,7 +31,7 @@ glance = "1.1.1"
 ktor = "3.5.2"
 
 # The on-device HTTP inspector, debug builds only.
-chucker = "4.2.0"
+chucker = "4.3.1"
 
 robolectric = "4.16.1"
 
