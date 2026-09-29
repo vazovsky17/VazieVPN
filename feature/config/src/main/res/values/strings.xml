@@ -108,5 +108,5 @@
     <string name="config_method_example_label">A link looks like this:</string>
     <string name="config_method_example_a11y">An example of a configuration link</string>
     <string name="config_method_unsure">Not sure what you have? Paste it anyway — if Vazie VPN doesn\'t recognise it, it will say so and won\'t try to guess.</string>
-    <string name="config_method_planned">For now Vazie VPN reads only %1$s. Subscription links, WireGuard and other formats are coming soon.</string>
+    <string name="config_method_planned">For now Vazie VPN reads only %1$s. Subscription links and more formats are coming soon.</string>
 </resources>

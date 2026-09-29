@@ -101,5 +101,5 @@
     <string name="config_method_example_label">Так выглядит ссылка:</string>
     <string name="config_method_example_a11y">Пример ссылки с конфигурацией</string>
     <string name="config_method_unsure">Не знаете, что у вас? Вставьте — если Vazie VPN не узнает ссылку, то скажет об этом и не станет ничего угадывать.</string>
-    <string name="config_method_planned">Пока Vazie VPN читает только %1$s. Скоро — ссылки-подписки, WireGuard и другие форматы.</string>
+    <string name="config_method_planned">Пока Vazie VPN читает только %1$s. Скоро появятся ссылки-подписки и другие форматы.</string>
 </resources>
