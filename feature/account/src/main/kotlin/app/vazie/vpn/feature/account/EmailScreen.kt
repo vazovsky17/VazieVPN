@@ -21,7 +21,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.unit.dp
 import app.vazie.vpn.core.designsystem.component.VazieButton
 import app.vazie.vpn.core.designsystem.component.VazieScreenScaffold
 import app.vazie.vpn.core.designsystem.component.VazieSuggestionChip
@@ -30,9 +29,6 @@ import app.vazie.vpn.core.designsystem.component.VazieToolbar
 import app.vazie.vpn.core.designsystem.component.scrolledUnderToolbar
 import app.vazie.vpn.core.designsystem.component.vazieScrollEdgePadding
 import app.vazie.vpn.core.designsystem.theme.VazieTheme
-
-/** A suggestion chip's touch target, or two lines of an error: whichever shows, the button stays put. */
-private val SuggestionSlotHeight = 48.dp
 
 /** Step one of email sign-in: the address a code goes to. */
 @Composable
@@ -88,10 +84,11 @@ fun EmailScreen(
                 )
                 val typo = state.emailCheck as? EmailCheck.Suggestion
                 val completions = if (typo != null || state.loading) emptyList() else state.emailCompletions
-                // One slot of fixed height for the error or the suggestions, so the button below never moves.
+                // One slot of fixed height for the error or the suggestions, so the button below never moves:
+                // a suggestion chip's touch target, or two lines of an error.
                 Box(
                     contentAlignment = Alignment.CenterStart,
-                    modifier = Modifier.fillMaxWidth().height(SuggestionSlotHeight),
+                    modifier = Modifier.fillMaxWidth().height(spacing.minTouchTarget),
                 ) {
                     if (error != null) {
                         Text(
