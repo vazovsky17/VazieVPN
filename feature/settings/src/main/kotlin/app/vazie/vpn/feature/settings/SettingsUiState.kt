@@ -54,9 +54,6 @@ enum class AboutLink(val url: String) {
     /** Releases and what changed in them. */
     CHANNEL("https://t.me/vazieapp"),
 
-    /** Where a bug goes. */
-    SUPPORT("https://t.me/vazieapp"),
-
     /** The bug-report form: what happened and on which phone. */
     BUG_REPORT("https://forms.gle/uBV3fWieRWSpLych8"),
 
@@ -99,8 +96,6 @@ sealed interface SettingsAction {
     data object OpenAppearance : SettingsAction
     data object OpenPrivacy : SettingsAction
 
-    /** Open the one place a person can write to about something being broken. */
-    data object OpenSupport : SettingsAction
     data object OpenAbout : SettingsAction
 
     /** Choose which apps use the tunnel. */

@@ -117,7 +117,6 @@ fun NavGraphBuilder.settingsGraph(
                 onOpenAppearance = { navController.navigate(AppearanceRoute) },
                 onOpenSplitTunnel = { navController.navigate(SplitTunnelRoute) },
                 onOpenPrivacy = { navController.navigate(PrivacyRoute) },
-                onOpenSupport = { context.open(AboutLink.SUPPORT) },
                 onReportBug = { context.open(AboutLink.BUG_REPORT) },
                 onOpenAbout = { navController.navigate(AboutRoute) },
                 accountSection = accountSection,
@@ -272,7 +271,6 @@ private fun SettingsRoute(
     onOpenAppearance: () -> Unit,
     onOpenSplitTunnel: () -> Unit,
     onOpenPrivacy: () -> Unit,
-    onOpenSupport: () -> Unit,
     onReportBug: () -> Unit,
     onOpenAbout: () -> Unit,
     accountSection: (@Composable () -> Unit)?,
@@ -297,7 +295,6 @@ private fun SettingsRoute(
                 SettingsAction.OpenAppearance -> onOpenAppearance()
                 SettingsAction.OpenSplitTunnel -> onOpenSplitTunnel()
                 SettingsAction.OpenPrivacy -> onOpenPrivacy()
-                SettingsAction.OpenSupport -> onOpenSupport()
                 SettingsAction.ReportBug -> onReportBug()
                 SettingsAction.OpenAbout -> onOpenAbout()
             }

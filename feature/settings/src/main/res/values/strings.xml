@@ -93,9 +93,6 @@
     <string name="settings_project_section">Vazie and support</string>
     <string name="settings_support_email">Support email</string>
     <string name="settings_support_email_body">vazovsky.hub\@gmail.com — payments, refunds, VPN Plus</string>
-    <string name="settings_support">Something broken?</string>
-    <string name="settings_support_body">Write to \@vazieapp and a person will read it. Please don\'t send your configuration or its link — they carry your keys.</string>
-
     <string name="settings_support_section">Help with the bills</string>
     <string name="settings_boosty_title">Buy the developer a coffee</string>
     <string name="settings_boosty_body">Vazie\'s servers cost money every month, and one person pays for them. Helping is entirely optional and unlocks nothing — there is nothing to unlock. Your own configurations are free and always will be.</string>
@@ -249,6 +246,6 @@
         <item quantity="one">Only %d app through VPN</item>
         <item quantity="other">Only %d apps through VPN</item>
     </plurals>
-    <string name="settings_report_bug">Report a bug</string>
-    <string name="settings_report_bug_body">A short form: what happened and on which phone.</string>
+    <string name="settings_report_bug">Report a bug or leave feedback</string>
+    <string name="settings_report_bug_body">A short form for bug reports, suggestions and feedback.</string>
 </resources>

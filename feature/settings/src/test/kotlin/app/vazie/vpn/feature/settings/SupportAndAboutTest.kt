@@ -49,35 +49,35 @@ class SupportAndAboutTest {
             .assertIsDisplayed()
     }
 
-    /** Support holds the help row; About holds privacy, the build and the developer. */
+    /** Support holds feedback; About holds privacy, the build and the developer. */
     @Test
-    fun `the help row is under Support and the rest under About`() {
+    fun `the feedback row is under Support and the rest under About`() {
         settings()
 
         // Read without scrolling: a scrolling Column lays out every child anyway.
         val supportHeader = compose.onNode(hasText(string(R.string.settings_help_section)) and isHeading()).top()
-        val helpRow = compose.onNodeWithText(string(R.string.settings_support)).top()
+        val feedbackRow = compose.onNodeWithText(string(R.string.settings_report_bug)).top()
         val aboutHeader = compose.onNode(hasText(string(R.string.settings_about_section)) and isHeading()).top()
         val privacyRow = compose.onNodeWithText(string(R.string.settings_privacy_row)).top()
 
-        assertTrue(supportHeader < helpRow, "the help row is not under the Support header")
-        assertTrue(helpRow < aboutHeader, "Support and About are interleaved")
+        assertTrue(supportHeader < feedbackRow, "the feedback row is not under the Support header")
+        assertTrue(feedbackRow < aboutHeader, "Support and About are interleaved")
         assertTrue(aboutHeader < privacyRow, "privacy is not under the About header")
     }
 
-    /** The help subtitle is on screen in full, in both languages. */
+    /** The feedback subtitle is on screen in full, in both languages. */
     @Test
-    fun `the help description is not truncated in English`() {
+    fun `the feedback description is not truncated in English`() {
         settings()
-        assertUntruncated(string(R.string.settings_support_body))
+        assertUntruncated(string(R.string.settings_report_bug_body))
     }
 
     /** Russian is the case that matters: it runs about a third longer than English. */
     @Test
     @Config(sdk = [34], qualifiers = "ru-rRU-w360dp-h760dp-xhdpi")
-    fun `the help description is not truncated in Russian`() {
+    fun `the feedback description is not truncated in Russian`() {
         settings()
-        assertUntruncated(string(R.string.settings_support_body))
+        assertUntruncated(string(R.string.settings_report_bug_body))
     }
 
     /** The developer card carries the picture its text is about, read from the content description because
@@ -94,25 +94,25 @@ class SupportAndAboutTest {
         ).performScrollTo().assertIsDisplayed()
     }
 
-    /** The support row is in one place, not two. */
+    /** The feedback row is in one place, not two. */
     @Test
-    fun `About no longer carries its own support row`() {
+    fun `About does not carry the feedback row`() {
         about()
         assertEquals(
             0,
-            compose.onAllNodes(hasText(string(R.string.settings_support))).fetchSemanticsNodes().size,
-            "the support row is on About as well as in Settings",
+            compose.onAllNodes(hasText(string(R.string.settings_report_bug))).fetchSemanticsNodes().size,
+            "the feedback row is on About as well as in Settings",
         )
     }
 
     @Test
-    fun `pressing the help row asks to open support`() {
+    fun `pressing the feedback row asks to open the form`() {
         val actions = mutableListOf<SettingsAction>()
         settings { actions += it }
 
-        compose.onNodeWithText(string(R.string.settings_support)).performScrollTo().performClick()
+        compose.onNodeWithText(string(R.string.settings_report_bug)).performScrollTo().performClick()
 
-        assertEquals<List<SettingsAction>>(listOf(SettingsAction.OpenSupport), actions)
+        assertEquals<List<SettingsAction>>(listOf(SettingsAction.ReportBug), actions)
     }
 
     /** The subtitle node reports the whole string. */

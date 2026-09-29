@@ -116,14 +116,6 @@ fun SettingsScreen(
                 )
                 VazieDivider()
                 VazieListItem(
-                    title = stringResource(R.string.settings_support),
-                    subtitle = stringResource(R.string.settings_support_body),
-                    trailingContent = { ChevronIcon() },
-                    onClick = { onAction(SettingsAction.OpenSupport) },
-                    subtitleMaxLines = Int.MAX_VALUE,
-                )
-                VazieDivider()
-                VazieListItem(
                     title = stringResource(R.string.settings_report_bug),
                     subtitle = stringResource(R.string.settings_report_bug_body),
                     trailingContent = { ChevronIcon() },
