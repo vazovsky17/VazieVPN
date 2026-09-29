@@ -98,7 +98,7 @@ jobs:
           VAZIE_KEY_ALIAS: ${{ secrets.VAZIE_KEY_ALIAS }}
           VAZIE_KEY_PASSWORD: ${{ secrets.VAZIE_KEY_PASSWORD }}
           APPMETRICA_API_KEY: ${{ secrets.APPMETRICA_API_KEY }}
-        run:./gradlew --no-daemon :app:checkReleaseGraph :app:checkReleaseArtifact
+        run: ./gradlew --no-daemon :app:checkReleaseGraph :app:checkReleaseArtifact
 
       - name: Build the Play bundle
         env:
