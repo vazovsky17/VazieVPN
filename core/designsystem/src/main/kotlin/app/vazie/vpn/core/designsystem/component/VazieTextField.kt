@@ -51,6 +51,8 @@ fun VazieTextField(
     placeholder: String? = null,
     enabled: Boolean = true,
     errorMessage: String? = null,
+    /** False when the screen shows [errorMessage] itself; the border and the semantics still carry it. */
+    showErrorMessage: Boolean = true,
     singleLine: Boolean = true,
     keyboardOptions: KeyboardOptions = KeyboardOptions.Default,
     keyboardActions: KeyboardActions = KeyboardActions.Default,
@@ -148,7 +150,7 @@ fun VazieTextField(
                 },
             )
         }
-        if (errorMessage != null) {
+        if (errorMessage != null && showErrorMessage) {
             Text(
                 text = errorMessage,
                 style = VazieTheme.typography.caption,

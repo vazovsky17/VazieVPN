@@ -42,14 +42,16 @@ class EmailFormatTest {
 
     @Test
     fun `common domains are offered before the at sign is typed`() {
-        assertEquals(listOf("ivan@gmail.com", "ivan@yandex.ru", "ivan@mail.ru"), EmailFormat.completions("ivan"))
-        assertEquals(listOf("ivan@gmail.com", "ivan@yandex.ru", "ivan@mail.ru"), EmailFormat.completions("ivan@"))
+        assertEquals(listOf("ivan@gmail.com", "ivan@yandex.ru", "ivan@mail.ru", "ivan@icloud.com", "ivan@proton.me"), EmailFormat.completions("ivan"))
+        assertEquals(listOf("ivan@gmail.com", "ivan@yandex.ru", "ivan@mail.ru", "ivan@icloud.com", "ivan@proton.me"), EmailFormat.completions("ivan@"))
     }
 
     @Test
     fun `completions narrow to what the domain starts with and stop once it is known`() {
         assertEquals(listOf("ivan@yandex.ru", "ivan@ya.ru", "ivan@yahoo.com"), EmailFormat.completions("ivan@ya"))
         assertEquals(listOf("ivan@gmail.com"), EmailFormat.completions("ivan@gm"))
+        assertEquals(listOf("ivan@proton.me", "ivan@protonmail.com"), EmailFormat.completions("ivan@pro"))
+        assertEquals(listOf("ivan@icloud.com"), EmailFormat.completions("ivan@ic"))
         assertEquals(emptyList(), EmailFormat.completions("ivan@gmail.com"))
         assertEquals(emptyList(), EmailFormat.completions("ivan@company.example"))
     }
