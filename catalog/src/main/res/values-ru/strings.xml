@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vazie UI Kit</string>
+    <string name="catalog_title">VAZIE UI KIT</string>
+
+    <string name="catalog_axis_appearance">ОФОРМЛЕНИЕ</string>
+    <string name="catalog_axis_page">РАЗДЕЛ</string>
+
+    <string name="catalog_appearance_night_indigo">Night Indigo</string>
+    <string name="catalog_appearance_milk">Milk</string>
+
+    <string name="catalog_page_colors">Цвета</string>
+    <string name="catalog_page_typography">Шрифты</string>
+    <string name="catalog_page_foundation">Основа</string>
+    <string name="catalog_page_actions">Действия</string>
+    <string name="catalog_page_input">Ввод</string>
+    <string name="catalog_page_lists">Списки</string>
+    <string name="catalog_page_feedback">Отклик</string>
+    <string name="catalog_page_technical">Технический</string>
+
+    <string name="catalog_group_surfaces">Поверхности</string>
+    <string name="catalog_group_brand">Фирменные заливки</string>
+    <string name="catalog_group_text">Текст</string>
+    <string name="catalog_group_text_accessible">Текст (доступные варианты)</string>
+    <string name="catalog_group_status_fills">Заливки состояний</string>
+    <string name="catalog_group_containers">Контейнеры</string>
+    <string name="catalog_group_technical_tokens">Технические (Консоль)</string>
+    <string name="catalog_group_spacing">Шкала отступов</string>
+    <string name="catalog_group_spacing_aliases">Семантические отступы</string>
+    <string name="catalog_group_shapes">Формы</string>
+    <string name="catalog_group_borders">Толщины контуров</string>
+    <string name="catalog_group_elevation">Тени</string>
+    <string name="catalog_group_buttons">Варианты кнопок</string>
+    <string name="catalog_group_button_states">Состояния кнопок</string>
+    <string name="catalog_group_icon_button">Кнопка-иконка</string>
+    <string name="catalog_group_bottom_bar">Нижняя панель</string>
+    <string name="catalog_group_text_field">Текстовое поле</string>
+    <string name="catalog_group_secret_field">Поле секрета</string>
+    <string name="catalog_group_switch">Переключатель</string>
+    <string name="catalog_group_segmented">Сегментный контрол</string>
+    <string name="catalog_group_swatches">Выбор образца</string>
+    <string name="catalog_group_status">Чипы состояния</string>
+    <string name="catalog_group_badges">Бейджи</string>
+    <string name="catalog_group_list_item">Строки списка</string>
+    <string name="catalog_group_detail_row">Строка «ключ — значение»</string>
+    <string name="catalog_group_section_header">Заголовок секции</string>
+    <string name="catalog_group_progress">Прогресс</string>
+    <string name="catalog_group_snackbar">Снекбар</string>
+    <string name="catalog_group_states">Пустые состояния и ошибки</string>
+    <string name="catalog_group_dialog">Диалог</string>
+    <string name="catalog_group_technical">Техническая секция</string>
+
+    <string name="catalog_state_default">Обычное</string>
+    <string name="catalog_state_disabled">Отключено</string>
+    <string name="catalog_state_loading">Загрузка</string>
+    <string name="catalog_state_error">Ошибка</string>
+    <string name="catalog_state_valid">Проверено</string>
+    <string name="catalog_state_placeholder">Подсказка</string>
+    <string name="catalog_state_with_icon">С иконкой</string>
+
+    <string name="catalog_action_add">Добавить</string>
+    <string name="catalog_action_close">Закрыть</string>
+    <string name="catalog_action_show">ПОКАЗАТЬ</string>
+    <string name="catalog_action_hide">СКРЫТЬ</string>
+    <string name="catalog_action_see_all">Все</string>
+    <string name="catalog_action_retry">Повторить</string>
+    <string name="catalog_action_connect">ПОДКЛЮЧИТЬ</string>
+    <string name="catalog_action_cancel">Отмена</string>
+    <string name="catalog_action_remove">Удалить</string>
+    <string name="catalog_action_open_dialog">Открыть диалог</string>
+
+    <string name="catalog_nav_home">ГЛАВНАЯ</string>
+    <string name="catalog_nav_connections">ПОДКЛЮЧЕНИЯ</string>
+    <string name="catalog_nav_settings">НАСТРОЙКИ</string>
+
+    <string name="catalog_field_name">Название</string>
+    <string name="catalog_field_placeholder">Вставьте ссылку</string>
+    <string name="catalog_field_error">Не удалось прочитать ссылку</string>
+    <string name="catalog_field_secret">Ключ</string>
+    <string name="catalog_section_example">Мои конфиги</string>
+    <string name="catalog_list_locked">Требуется подписка</string>
+    <string name="catalog_list_setting">Строка настройки</string>
+    <string name="catalog_segment_auto">Авто</string>
+    <string name="catalog_segment_manual">Вручную</string>
+    <string name="catalog_snackbar_message">Конфигурация импортирована</string>
+    <string name="catalog_empty_title">Конфигураций пока нет</string>
+    <string name="catalog_empty_description">Импортируйте первую конфигурацию, чтобы начать.</string>
+    <string name="catalog_error_title">Время подключения истекло</string>
+    <string name="catalog_error_description">Сервер не ответил. Повторите или выберите другую конфигурацию.</string>
+    <string name="catalog_dialog_title">Удалить эту конфигурацию?</string>
+    <string name="catalog_dialog_text">Она будет удалена с этого устройства. Отменить будет нельзя.</string>
+    <string name="catalog_technical_title">Диагностика</string>
+
+    <string name="catalog_type_display">Подключено</string>
+    <string name="catalog_type_headline">Подключения</string>
+    <string name="catalog_type_title">Домашний релей</string>
+    <string name="catalog_type_title_small">Рабочий туннель</string>
+    <string name="catalog_type_body">Vazie не анализирует ваш трафик.</string>
+    <string name="catalog_type_label">МОИ КОНФИГИ</string>
+    <string name="catalog_type_label_small">СВОЙ</string>
+    <string name="catalog_type_caption">Использован 2 часа назад</string>
+    <string name="catalog_type_mono">vless · reality · 32 мс</string>
+    <string name="catalog_type_mono_small">relay.example.net:443</string>
+    <string name="catalog_type_mono_micro">wireguard · рукопожатие 12 с назад</string>
+
+    <string name="catalog_note_contrast">Пары «передний план / фон» проверяются на ≥ 4,5:1 тестом VazieColorsContrastTest.</string>
+    <string name="catalog_note_fonts">Подключены как вариативные шрифты. Начертания выбирает режим, оформление — никогда.</string>
+    <string name="catalog_note_density">Переключите РЕЖИМ на консольный: эти значения уплотняются, цвета не меняются.</string>
+    <string name="catalog_note_borders">Состояние фокуса и ошибки несёт толщина, а не только цвет.</string>
+    <string name="catalog_note_secret_field">Только примеры значений — никаких настоящих учётных данных.</string>
+    <string name="catalog_note_list_item">Одна форма строки со слотами: конфигурации, серверы, способы импорта и настройки.</string>
+    <string name="catalog_note_detail_row">Обычный режим для пары «ключ — значение». Консольная пара — техническая строка.</string>
+    <string name="catalog_note_technical">Консольное представление. Использует технические роли конкретного оформления, поэтому светлая тема остаётся светлой.</string>
+    <string name="catalog_note_swatches">Выбор показан кольцом и галочкой, а не только цветом.</string>
+    <string name="catalog_detail_protocol">Протокол</string>
+    <string name="catalog_detail_protocol_value">VLESS · Reality</string>
+    <string name="catalog_detail_server">Сервер</string>
+    <string name="catalog_detail_server_value">relay.example.net</string>
+    <string name="catalog_detail_last_used">Последнее подключение</string>
+    <string name="catalog_detail_last_used_value">2 часа назад</string>
+    <string name="catalog_list_config_title">Домашний релей</string>
+    <string name="catalog_list_config_subtitle">VLESS · подключено</string>
+    <string name="catalog_list_config_alt_title">Рабочий туннель</string>
+    <string name="catalog_list_config_alt_subtitle">VLESS · использован вчера</string>
+    <string name="catalog_field_invalid_value">не похоже на ссылку</string>
+    <string name="catalog_group_faces">Роли шрифтов</string>
+    <string name="catalog_group_type_specimen">Латиница и кириллица</string>
+    <string name="catalog_group_type_buttons">Кнопки</string>
+    <string name="catalog_group_type_technical">Техническая пара «подпись — значение»</string>
+    <string name="catalog_face_product">product</string>
+    <string name="catalog_face_label">label</string>
+    <string name="catalog_face_technical">technical</string>
+    <string name="catalog_note_technical_type">Технические значения остаются в JetBrains Mono во всех режимах, включая Whimsy.</string>
+</resources>

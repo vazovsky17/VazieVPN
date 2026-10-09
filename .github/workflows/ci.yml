@@ -1,0 +1,115 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+# Endpoints come from repository secrets; a pull request from a fork gets none, so checks fall back to
+# example.com placeholders. Release builds (release.yml) have no fallback.
+env:
+  VAZIE_API_URL: ${{ secrets.VAZIE_API_URL || vars.VAZIE_API_URL || 'https://api.example.com/v1' }}
+  VAZIE_VPN_API_URL: ${{ secrets.VAZIE_VPN_API_URL || vars.VAZIE_VPN_API_URL || 'https://vpn.api.example.com/v1' }}
+  VAZIE_SITE_URL: ${{ secrets.VAZIE_SITE_URL || vars.VAZIE_SITE_URL || 'https://example.com' }}
+  VAZIE_RELEASE_FORBIDDEN_HOSTS: ${{ secrets.VAZIE_RELEASE_FORBIDDEN_HOSTS }}
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    # `working-directory` covers `run:` steps only; `uses:` steps resolve from the workspace root.
+    defaults:
+      run:
+        working-directory: .
+
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      # Daemon JVM is pinned to 21 by gradle/gradle-daemon-jvm.properties.
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4
+      # The pinned Gradle, and the wrapper jar generated from it and validated.
+      - uses: ./.github/actions/gradle
+
+      # One invocation so compilation is shared between the checks, the variants and lint. Root `check` covers
+      # unit tests, checkModuleRules, checkDesignTokens, checkLocalization and checkPreviewConvention.
+      - name: Build and check
+        run: >
+          ./gradlew --no-daemon
+          check
+          assembleDirectDebug
+          assemblePlayDebug
+          :catalog:assembleDebug
+          :app:lintDirectDebug
+          :catalog:lintDebug
+
+      # A minified release, on every pull request.
+      - name: Minified release
+        run: >
+          ./gradlew --no-daemon
+          :app:assembleDirectRelease
+          :app:lintDirectRelease
+          :app:checkReleaseGraph
+
+      # Scans those APKs for credential shapes, backend hosts, debug tools and unsupported protocols.
+      - name: Scan the release artifact
+        run: ./gradlew --no-daemon :app:checkReleaseArtifact
+
+      # Test reports and lint output.
+      - name: Upload reports
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: reports
+          path: |
+            **/build/reports/
+            **/build/test-results/
+          retention-days: 7
+
+  # Every remaining release variant, and the App Bundle, on their own runner.
+  release-variants:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: .
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Play bundle
+            task: :app:bundlePlayRelease
+          - name: Huawei
+            task: :app:assembleHuaweiRelease
+          - name: Samsung
+            task: :app:assembleSamsungRelease
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4
+      - uses: ./.github/actions/gradle
+      - name: Build ${{ matrix.name }}
+        run: ./gradlew --no-daemon ${{ matrix.task }}
+      - name: Upload reports
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: reports-${{ matrix.name }}
+          path: |
+            **/build/reports/
+          retention-days: 7

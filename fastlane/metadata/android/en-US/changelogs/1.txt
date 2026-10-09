@@ -1,0 +1,1 @@
+The first release of Vazie VPN: your own VLESS configurations (REALITY, TLS), Vazie servers with VPN Plus, widgets, a Quick Settings tile and shortcuts.

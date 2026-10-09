@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Developer-facing labels for the catalog. Design-token names and component names stay in English in both
+     locales: they are identifiers, not prose. -->
+<resources>
+    <string name="app_name">Vazie UI Kit</string>
+    <string name="catalog_title">VAZIE UI KIT</string>
+
+    <string name="catalog_axis_appearance">APPEARANCE</string>
+    <string name="catalog_axis_page">PAGE</string>
+
+    <string name="catalog_appearance_night_indigo">Night Indigo</string>
+    <string name="catalog_appearance_milk">Milk</string>
+
+    <string name="catalog_page_colors">Colors</string>
+    <string name="catalog_page_typography">Type</string>
+    <string name="catalog_page_foundation">Foundation</string>
+    <string name="catalog_page_actions">Actions</string>
+    <string name="catalog_page_input">Input</string>
+    <string name="catalog_page_lists">Lists</string>
+    <string name="catalog_page_feedback">Feedback</string>
+    <string name="catalog_page_technical">Technical</string>
+
+    <string name="catalog_group_surfaces">Surfaces</string>
+    <string name="catalog_group_brand">Brand fills</string>
+    <string name="catalog_group_text">Text</string>
+    <string name="catalog_group_text_accessible">Text (accessible variants)</string>
+    <string name="catalog_group_status_fills">Status fills</string>
+    <string name="catalog_group_containers">Containers</string>
+    <string name="catalog_group_technical_tokens">Technical (Console)</string>
+    <string name="catalog_group_spacing">Spacing scale</string>
+    <string name="catalog_group_spacing_aliases">Semantic spacing</string>
+    <string name="catalog_group_shapes">Shapes</string>
+    <string name="catalog_group_borders">Border widths</string>
+    <string name="catalog_group_elevation">Elevation</string>
+    <string name="catalog_group_buttons">Button variants</string>
+    <string name="catalog_group_button_states">Button states</string>
+    <string name="catalog_group_icon_button">Icon button</string>
+    <string name="catalog_group_bottom_bar">Bottom bar</string>
+    <string name="catalog_group_text_field">Text field</string>
+    <string name="catalog_group_secret_field">Secret field</string>
+    <string name="catalog_group_switch">Switch</string>
+    <string name="catalog_group_segmented">Segmented control</string>
+    <string name="catalog_group_swatches">Swatch picker</string>
+    <string name="catalog_group_status">Status chips</string>
+    <string name="catalog_group_badges">Badges</string>
+    <string name="catalog_group_list_item">List items</string>
+    <string name="catalog_group_detail_row">Detail row</string>
+    <string name="catalog_group_section_header">Section header</string>
+    <string name="catalog_group_progress">Progress</string>
+    <string name="catalog_group_snackbar">Snackbar</string>
+    <string name="catalog_group_states">Empty and error states</string>
+    <string name="catalog_group_dialog">Dialog</string>
+    <string name="catalog_group_technical">Technical section</string>
+
+    <string name="catalog_state_default">Default</string>
+    <string name="catalog_state_disabled">Disabled</string>
+    <string name="catalog_state_loading">Loading</string>
+    <string name="catalog_state_error">Error</string>
+    <string name="catalog_state_valid">Valid</string>
+    <string name="catalog_state_placeholder">Placeholder</string>
+    <string name="catalog_state_with_icon">With icon</string>
+
+    <string name="catalog_action_add">Add</string>
+    <string name="catalog_action_close">Close</string>
+    <string name="catalog_action_show">SHOW</string>
+    <string name="catalog_action_hide">HIDE</string>
+    <string name="catalog_action_see_all">See all</string>
+    <string name="catalog_action_retry">Try again</string>
+    <string name="catalog_action_connect">CONNECT</string>
+    <string name="catalog_action_cancel">Cancel</string>
+    <string name="catalog_action_remove">Remove</string>
+    <string name="catalog_action_open_dialog">Open dialog</string>
+
+    <string name="catalog_nav_home">HOME</string>
+    <string name="catalog_nav_connections">CONNECTIONS</string>
+    <string name="catalog_nav_settings">SETTINGS</string>
+
+    <string name="catalog_field_name">Name</string>
+    <string name="catalog_field_placeholder">Paste a link</string>
+    <string name="catalog_field_error">Could not read this link</string>
+    <string name="catalog_field_secret">Key</string>
+    <string name="catalog_section_example">My configs</string>
+    <string name="catalog_list_locked">Requires a subscription</string>
+    <string name="catalog_list_setting">Setting row</string>
+    <string name="catalog_segment_auto">Auto</string>
+    <string name="catalog_segment_manual">Manual</string>
+    <string name="catalog_snackbar_message">Config imported</string>
+    <string name="catalog_empty_title">No configurations yet</string>
+    <string name="catalog_empty_description">Import your first config to get started.</string>
+    <string name="catalog_error_title">Connection timed out</string>
+    <string name="catalog_error_description">The server did not respond. Try again or pick another config.</string>
+    <string name="catalog_dialog_title">Remove this config?</string>
+    <string name="catalog_dialog_text">It will be deleted from this device. This cannot be undone.</string>
+    <string name="catalog_technical_title">Diagnostic section</string>
+
+    <string name="catalog_type_display">Connected</string>
+    <string name="catalog_type_headline">Connections</string>
+    <string name="catalog_type_title">Home relay</string>
+    <string name="catalog_type_title_small">Office tunnel</string>
+    <string name="catalog_type_body">Vazie does not inspect your traffic.</string>
+    <string name="catalog_type_label">MY CONFIGS</string>
+    <string name="catalog_type_label_small">CUSTOM</string>
+    <string name="catalog_type_caption">Used 2 hours ago</string>
+    <string name="catalog_type_mono">vless · reality · 32ms</string>
+    <string name="catalog_type_mono_small">relay.example.net:443</string>
+    <string name="catalog_type_mono_micro">wireguard · handshake 12s ago</string>
+
+    <string name="catalog_note_contrast">Foreground/background pairs are asserted at ≥ 4.5:1 by VazieColorsContrastTest.</string>
+    <string name="catalog_note_fonts">Bundled as variable fonts. The experience picks the faces; the appearance never does.</string>
+    <string name="catalog_note_density">Switch EXPERIENCE to Console: these tighten, colours do not change.</string>
+    <string name="catalog_note_borders">Width carries focus and error state, not colour alone.</string>
+    <string name="catalog_note_secret_field">Sample values only — never a real credential.</string>
+    <string name="catalog_note_list_item">One row shape with slots, used for configs, servers, import methods and settings.</string>
+    <string name="catalog_note_detail_row">Standard rendering of a key and a value. The Console pair is the technical row.</string>
+    <string name="catalog_note_technical">Console presentation. Uses the appearance-specific technical roles, so a light appearance stays light.</string>
+    <string name="catalog_note_swatches">Selection is shown by ring and check mark, not by colour alone.</string>
+    <string name="catalog_detail_protocol">Protocol</string>
+    <string name="catalog_detail_protocol_value">VLESS · Reality</string>
+    <string name="catalog_detail_server">Server</string>
+    <string name="catalog_detail_server_value">relay.example.net</string>
+    <string name="catalog_detail_last_used">Last used</string>
+    <string name="catalog_detail_last_used_value">2 hours ago</string>
+    <string name="catalog_list_config_title">Home relay</string>
+    <string name="catalog_list_config_subtitle">VLESS · connected</string>
+    <string name="catalog_list_config_alt_title">Office tunnel</string>
+    <string name="catalog_list_config_alt_subtitle">VLESS · used yesterday</string>
+    <string name="catalog_field_invalid_value">not a valid link</string>
+    <string name="catalog_group_faces">Typeface roles</string>
+    <string name="catalog_group_type_specimen">Latin and Cyrillic</string>
+    <string name="catalog_group_type_buttons">Buttons</string>
+    <string name="catalog_group_type_technical">Technical label and value</string>
+    <string name="catalog_face_product">product</string>
+    <string name="catalog_face_label">label</string>
+    <string name="catalog_face_technical">technical</string>
+    <string name="catalog_note_technical_type">Technical values stay in JetBrains Mono in every experience, Whimsy included.</string>
+</resources>
