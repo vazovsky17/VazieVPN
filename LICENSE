@@ -1,0 +1,27 @@
+Vazie VPN Source Code License
+
+Copyright (c) 2026 Vazovsky. All rights reserved.
+
+The source code in this repository is publicly available for
+viewing, educational purposes, and security and privacy review.
+
+You may:
+- view and study the source code;
+- reference small portions of the code for educational purposes;
+- build and run the application on your own devices to verify how it
+  works, including temporary local changes made for that purpose;
+- publish the results of a security or privacy review;
+- fork the repository on GitHub for personal evaluation.
+
+You may not, without prior written permission:
+- redistribute the application or substantial portions of its source code;
+- publish modified or unmodified builds of the application;
+- use the source code as the basis of another application;
+- distribute the application through Google Play or any other application store;
+- use the Vazie name, branding, icons, graphics, or other assets;
+- present any application, website, or service as Vazie or as affiliated with it;
+- connect modified builds or other software to Vazie servers and services.
+
+Third-party components are licensed under their own terms; see NOTICE.md.
+
+This software is provided "as is", without warranty of any kind.

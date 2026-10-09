@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Settings block -->
+    <string name="account_section_title">Vazie Account</string>
+    <string name="account_sign_in_row">Sign in</string>
+    <string name="account_sign_in_row_body">With a code sent to your email</string>
+    <string name="account_checking">Checking your account…</string>
+    <string name="account_status">Status: %1$s</string>
+    <string name="account_status_active">active</string>
+    <string name="account_status_unconfirmed">Status not confirmed yet</string>
+    <string name="account_no_email">Signed in</string>
+    <string name="account_offline_body">No connection to Vazie — account not confirmed</string>
+    <string name="account_retry">Try again</string>
+    <string name="account_sign_out">Sign out</string>
+    <string name="account_local_sign_out_title">Sign out on this device?</string>
+    <string name="account_local_sign_out_body">Vazie can\'t reach the server right now. You can sign out on this device only; the session on the server will expire on its own.</string>
+    <string name="account_local_sign_out_confirm">Sign out</string>
+    <string name="account_cancel">Cancel</string>
+    <string name="account_delete">Delete account</string>
+    <string name="account_delete_title">Delete account</string>
+    <string name="account_delete_body">Your email address and sign-ins are deleted, and VPN Plus ends right away, with no refund for unused time. This can\'t be undone. Your own configurations stay on this phone.</string>
+    <string name="account_delete_confirm">Delete the account for good</string>
+    <string name="account_delete_row_body">Your address, sign-ins and VPN Plus</string>
+    <string name="account_delete_type_prompt">To confirm, type the account\'s email address: %1$s</string>
+    <string name="account_delete_failed">The account wasn\'t deleted and is unchanged. Check the connection and try again.</string>
+
+    <!-- Email step -->
+    <string name="account_email_title">Sign in to Vazie</string>
+    <string name="account_email_body">We\'ll send a 6-digit code to your email. No password needed.</string>
+    <string name="account_email_label">Email</string>
+    <string name="account_email_placeholder">you@example.com</string>
+    <string name="account_email_submit">Get code</string>
+    <string name="account_back">Back</string>
+
+    <!-- Code step -->
+    <string name="account_code_title">Enter the code</string>
+    <string name="account_code_body">We sent a 6-digit code to %1$s.</string>
+    <string name="account_code_label">Code</string>
+    <string name="account_code_submit">Confirm</string>
+    <string name="account_code_resend">Send the code again</string>
+    <string name="account_code_resend_in">Send again in %1$s</string>
+    <string name="account_code_resent">A new code is on its way.</string>
+    <string name="account_code_change_email">Change email</string>
+
+    <!-- Problems -->
+    <string name="account_error_invalid_email">This doesn\'t look like an email address.</string>
+    <string name="account_error_invalid_code">Wrong or expired code. If you have run out of attempts, request a new code.</string>
+    <string name="account_error_rate_limited">Too many attempts. Try again in %1$s.</string>
+    <string name="account_error_rate_limited_later">Too many attempts. Try again a little later.</string>
+    <string name="account_error_mail">We can\'t send a code right now. Try again in a minute.</string>
+    <string name="account_error_not_enabled">Sign-in isn\'t available right now.</string>
+    <string name="account_error_network">No connection to Vazie. Check the internet and try again.</string>
+    <string name="account_error_server">Something went wrong on our side. Try again later.</string>
+
+    <!-- VPN Plus: the plans and the payment. Prices mirror the backend's plans; the payment page shows the amount charged. -->
+    <string name="plus_title">VPN Plus</string>
+    <string name="plus_body">Vazie\'s own servers, for when you have no configuration of your own. A one-off payment for the chosen period.</string>
+    <string name="plus_servers_growth">New servers will open as Vazie VPN subscribers and the Boosty channel grow.</string>
+    <string name="plus_plan_month">1 month</string>
+    <string name="plus_plan_year">1 year</string>
+    <!-- Prices are the backend's, formatted in the app: none is written here. %1$s is a price per month. -->
+    <string name="plus_plan_per_month">About %1$s a month</string>
+    <string name="plus_plans_loading">Loading the plans…</string>
+    <string name="plus_plans_unavailable_network">The plans cannot be loaded without a connection to Vazie. Check the internet and try again.</string>
+    <string name="plus_plans_unavailable">The plans are temporarily unavailable. Try again a little later.</string>
+    <string name="plus_plans_stale">These are the prices from the last time the plans loaded. The current ones are on the site before you pay.</string>
+    <string name="plus_plans_refresh">Refresh the prices</string>
+    <string name="plus_plan_year_badge">Best value</string>
+    <string name="plus_connect">Get VPN Plus</string>
+    <string name="plus_terms">Paid once for the chosen period. You pay on vazie.app.</string>
+    <string name="plus_row_title">VPN Plus</string>
+    <string name="plus_row_body">Vazie\'s servers by subscription</string>
+    <string name="payment_title">Paying for VPN Plus</string>
+    <string name="payment_opening">Opening the site…</string>
+    <string name="payment_awaiting_title">Finish paying on the site</string>
+    <string name="payment_awaiting_body">Sign in to the same Vazie account on the site. When you come back to the app, VPN Plus turns on by itself.</string>
+    <string name="payment_checking">Checking the payment…</string>
+    <string name="payment_not_seen">The payment is not showing yet. If you have already paid, wait a minute and check again.</string>
+    <string name="payment_check">Check payment</string>
+    <string name="payment_open_site">Open the site</string>
+    <string name="payment_activated_title">VPN Plus is on</string>
+    <string name="payment_activated_body">Access is on for your Vazie account.</string>
+    <string name="payment_site_title">Could not open the site</string>
+    <string name="payment_site_body">No browser took the link. Open vazie.app in any browser and get VPN Plus there.</string>
+    <string name="payment_retry">Try again</string>
+    <string name="payment_done">Done</string>
+    <string name="payment_close">Close</string>
+
+    <!-- The offer consent before any purchase; the link opens the offer on vazie.app. -->
+    <string name="plus_consent_text">I accept the terms of the %1$s</string>
+    <string name="plus_consent_link">public offer</string>
+    <string name="plus_row_active">Active until %1$s</string>
+    <string name="plus_row_active_open">Active</string>
+    <string name="account_row_open">Account settings</string>
+    <string name="account_title">Account</string>
+    <string name="account_email_row">Email</string>
+    <string name="account_status_row">Status</string>
+    <string name="account_plus_row">VPN Plus</string>
+    <string name="account_plus_none">Not connected</string>
+    <string name="manage_title">VPN Plus subscription</string>
+    <string name="manage_active">Active until %1$s</string>
+    <string name="manage_active_open">Active, with no end date</string>
+    <string name="manage_ended">The subscription has ended</string>
+    <string name="manage_plan">Plan: %1$s</string>
+    <string name="manage_extend_title">Extend</string>
+    <string name="manage_extend_body">The new period starts when the current one ends.</string>
+    <string name="manage_extend">Extend</string>
+    <string name="manage_offer">Public offer</string>
+    <string name="manage_refunds">Refunds</string>
+    <string name="manage_loading">Checking the subscription…</string>
+    <string name="account_email_invalid">Check the address — something is off</string>
+    <string name="account_email_suggestion">Did you mean %1$s?</string>
+    <string name="account_code_open_mail">Open mail</string>
+</resources>

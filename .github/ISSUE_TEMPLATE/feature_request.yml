@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest something Vazie should do
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve
+      description: The underlying need is usually more useful than a specific solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you have in mind
+      description: Optional — how you'd imagine it working.
+
+  - type: markdown
+    attributes:
+      value: |
+        Vazie won't collect browsing activity, DNS queries or configuration contents, so requests
+        that need those will be declined. Much of the roadmap is already planned, so something
+        missing today may just be scheduled.
