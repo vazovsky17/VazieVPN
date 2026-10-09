@@ -33,7 +33,7 @@ ktor = "3.5.2"
 # The on-device HTTP inspector, debug builds only.
 chucker = "4.2.0"
 
-robolectric = "4.16.1"
+robolectric = "4.17"
 
 # An ImageIO reader for WebP, on the unit-test classpath of :core:designsystem and nowhere else.
 twelvemonkeys = "3.12.0"
